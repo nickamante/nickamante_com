@@ -1,0 +1,244 @@
+<% provide :title, "Resume" %>
+
+<% content_for :head do %>
+	<%= stylesheet_link_tag    "resume", :media => "all" %>  
+  	<%= stylesheet_link_tag    "resume-print", :media => "print" %>
+
+	<link rel="profile" href="http://microformats.org/profile/specs" /> <!-- all non-draft microformat specs; in this case, used in place of hCard and hCalendar -->
+	<link rel="profile" href="http://microformats.org/profile/hresume" />
+<% end %>
+
+<article class="hresume">
+	<header id="hcard-Nicholas-Amante" class="vcard">
+		<h1 class="fn" id="name-include">Nicholas Amante</h1>
+		<address>
+			<div class="adr">
+				<span class="type pref hidden">Home</span>
+				<span class="street-address">123 Fake Address Ln.</span>
+				<span class="locality">Hoboken</span>, <abbr class="region" title="New Jersey">NJ</abbr> <span class="postal-code">07030</span>
+			</div>
+			<a class="email" href="mailto:nick@nickamante.com">nick@nickamante.com</a>
+			<span class="tel">123-456-7890</span>
+			<div class="urls">
+				<a class="url printable" href="http://www.nickamante.com" rel="me"><span class="url-title">Personal Website</span></a>
+				<a class="url unprintable" href="http://www.linkedin.com/in/nicholasamante/" rel="me"><span class="url-title">LinkedIn profile</span></a>
+			</div>
+		</address>
+	</header>
+
+	<section class="summary">
+		<h1>Summary of Qualifications</h1>
+		<ul>
+			<li>Etiam ut purus a mi pulvinar adipiscing at quis mauris. Sed ac urna id dolor facilisis ultrices ut at.</li>
+			<li>Maecenas nulla metus, mollis a convallis ac, mattis eu nibh. Fusce luctus nulla consectetur.</li>
+		</ul>
+	</section>
+
+	<section class="skills">
+		<h1>Skills</h1>
+		<div class="subsection"><h2>Languages &amp; Technologies</h2>
+		<ul>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level-level="Expert" href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Expert" href="http://en.wikipedia.org/wiki/Asp.net">ASP.NET 2.0-4.0</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Linq">LINQ</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Windows_Communication_Foundation">WCF</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Java_(programming_language)">Java</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Php">PHP</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Sql">SQL</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Expert" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Expert" href="http://en.wikipedia.org/wiki/Jquery">jQuery</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/AJAX">AJAX</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Expert" href="http://en.wikipedia.org/wiki/Json">JSON</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Expert" href="http://en.wikipedia.org/wiki/HTML_5">HTML 5</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Css_3">CSS 3</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Intermediate" href="http://en.wikipedia.org/wiki/Xml">XML</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Beginner" href="http://en.wikipedia.org/wiki/Xaml">XAML</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Beginner" href="http://en.wikipedia.org/wiki/Windows_Presentation_Foundation">WPF</a></li>
+			<li><a class="skill" rel="tag" target="_blank" data-skill-level="Beginner" href="http://en.wikipedia.org/wiki/Silverlight">Silverlight</a></li>
+		</ul>
+		</div>
+		<div class="subsection">
+		<h2>Applications</h2>
+		<ul>
+			<li><a class="skill" rel="tag" target="_blank" href="">Visual Studio</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">IIS</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">Apache</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">MS SQL Server</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">MySQL</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">SQL Reporting Services</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">Adobe Photoshop</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">Visual SourceSafe</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">Subversion</a></li>
+			<li><a class="skill" rel="tag" target="_blank" href="">Team Foundation Suite</a></li>
+		</ul>
+		</div>
+	</section>
+
+	<section class="experience">
+		<h1>Experience</h1>
+		<ol class="vcalendar">
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">Senior .NET Developer</h3>
+				<abbr class="dtstart" title="2010-03">March 2010</abbr> - Present
+				<br />
+				<a class="org url" target="_blank" href="http://www.equinox.com/">Equinox Fitness</a>
+				<span class="location adr">
+					<span class="type hidden">Work</span>
+					<span class="locality">New York</span>, <abbr class="region" title="New York">NY</abbr>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Developed MyEQ2, a next generation, .NET based, fitness scheduling, tracking, and reporting platform for Equinox.com</li>
+						<li>Managed builds, source control, and production deployment for the Equinox online portfolio.</li>
+						<li>Championed documentation with the introduction of a developer wiki; took the team from 0 formal documentation 200+ pages including new developer orientaiton, solution description, location, build and deployment steps, and detailed production environment configuration.</li>
+						<li>Process improvement meetings with CIO and Director of IT</li>
+					</ul>
+				</div>
+			</li>
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">Technical Lead</h3>
+				<abbr class="dtstart" title="2010-03">March 2010</abbr> - Present
+				<br />
+				<a class="org url" target="_blank" href="http://www.blinkfitness.com/">Blink Fitness</a>
+				<span class="location adr">
+					<span class="type hidden">Work</span>
+					<span class="locality">New York</span>, <abbr class="region" title="New York">NY</abbr>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Oversaw development of blinkfitness.com and WPF based sales kiosks.</li>
+						<li>Coordinated with Marketing, Sales, and External vendors to brand, design, and build blinkfitness.com</li>
+						<li>Coded online purchase API for Blink Fitness with reusability for Equinox Fitness in mind.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">PHP Developer</h3>
+				<abbr class="dtstart" title="2009-04">April 2009</abbr> - <abbr class="dtend" title="2009-11">November 2009</abbr>
+				<br />
+				<a class="org url" target="_blank" href="http://www.jetsetzero.tv">Jet Set Zero, Inc.</a>
+				<span class="location">
+					<span class="adr">
+						<span class="type hidden">Work</span>
+						<span class="locality">Seoul</span>, <span class="country-name">South Korea</span>
+					</span> /
+					<span class="adr">
+						<span class="type hidden">Work</span>
+						<span class="locality">Istanbul</span>, <span class="country-name">Turkey</span>
+					</span>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Created a platform to deliver rich content and video to the company’s travel documentary system. Leveraged technologies such as PHP &amp; AJAX integrating with WordPress.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">Software Development Engineer</h3> <span class="sub-title">Business Intelligence Platforms</span>
+				<abbr class="dtstart" title="2006-07">July 2006</abbr> - <abbr class="dtend" title="2009-07">July 2009</abbr>
+				<br />
+				<a class="org url" target="_blank" href="http://www.microsoft.com">Microsoft Corporation</a>
+				<span class="location adr">
+					<span class="type hidden">Work</span>
+					<span class="locality">Redmond</span>, <abbr class="region" title="Washington">WA</abbr>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Led UI development of a .NET based Business Intelligence information management and presentation platform through numerous release cycles.</li>
+						<li>Developed SharePoint web parts utilizing ASP.net AJAX, Silverlight, and WCF services.</li>
+						<li>Created custom SharePoint features, web parts, and deployment packages.</li>
+						<li>Automated the build and deployment of platform components, reducing the potential for errors and eliminating manual tasks previously requiring ~30 minutes per build.</li>
+						<li>Analyzed business pain points and translated customer needs into platform requirements.</li>
+						<li>Delivered detailed functional &amp; technical specifications following SDLC guidelines.</li>
+						<li>Engaged with industry professionals on BI best practices and the benefits of Microsoft BI solutions as a presenter at Microsoft TechEd 2008.</li>
+						<li>Performance consistently ranked within the top 20% of Microsoft employees.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">Application Developer Intern</h3>
+				<abbr class="dtstart" title="2005-07">July 2005</abbr> - <abbr class="dtend" title="2005-11">November 2005</abbr>
+				<br />
+				<a class="org url" target="_blank" href="http://www.microsoft.com">Microsoft Corporation</a>
+				<span class="location adr">
+					<span class="type hidden">Work</span>
+					<span class="locality">Redmond</span>,  
+					<abbr class="region" title="Washington">WA</abbr>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Led requirements gathering, design, and development of a SharePoint based project tracking and reporting tool featuring cross-site organization, team, and project level status roll-up and executive scorecarding.</li>
+						<li>Developed SQL Reporting Services and Excel based reporting solutions.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">Technology Department</h3>
+				<abbr class="dtstart" title="2003-06">June 2003</abbr> - <abbr class="dtend" title="2005-08">August 2003</abbr> /
+				<abbr class="dtstart" title="2002-06">June 2002</abbr> - <abbr class="dtend" title="2005-08">August 2002</abbr>
+				<br />
+				<a class="org url" target="_blank" href="http://www.nhvweb.net">North Hunterdon-Voorhees Regional High School District</a>
+				<span class="location adr">
+					<span class="type hidden">Work</span>
+					<span class="locality">Annandale</span>, <abbr class="region" title="New Jersey">NJ</abbr>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Coordinated a district wide migration from Windows 98/2000 to XP.</li>
+						<li>Provided phone and on-site technical support to district employees.</li>
+						<li>Oversaw department asset management and tracking.</li>
+					</ul>
+				</div>
+			</li>
+			<li class="experience vevent vcard">		
+				<a href="#name-include" class="include hidden">Nicholas Amante</a>
+				<h3 class="summary title">Network Administrator</h3>
+				<abbr class="dtstart" title="1998-03">1998</abbr> - <abbr class="dtend" title="2001-05">2001</abbr>
+				<br />
+				<a class="org url" target="_blank" href="http://www.outofchaos.com">Pathfinder Consulting Group, L.L.C.</a>
+				<span class="location adr">
+					<span class="type hidden">Work</span>
+					<span class="locality">Annandale</span>, <abbr class="region" title="New Jersey">NJ</abbr>
+				</span>
+				<div class="description">
+					<ul>
+						<li>Leveraged ColdFusion &amp; SQL to create interactive sales analysis and feedback tools.</li>
+						<li>Collaborated on PHP web application development for a nationally known client base.</li>
+						<li>Maintained a wide variety of hardware and software systems including IIS and Apache servers.</li>
+					</ul>
+				</div>
+			</li>
+		</ol>
+	</section>
+
+	<section class="education">
+		<h1>Education</h1>
+		<ol class="vcalendar">
+			<li class="education vevent vcard">
+				<div class="summary">
+					<h3><a class="fn org url" target="_blank" href="http://www.rit.edu">Rochester Institute of Technology</a></h3>
+					<span class="adr">
+						<span class="locality">Rochester</span>, <abbr class="region" title="New York">NY</abbr>
+					</span>
+					<br />
+					<h4 class="title">Bachelor of Science in Information Technology</h4>
+					<abbr class="dtend" title="2006-05">May 2006</abbr>
+				</div>
+				<div class="description">
+					<ul>
+						<li>Concentrations: Web Development &amp; Interactive Multimedia</li>
+						<li>Minors: Business Management &amp; Criminal Justice</li>
+						<li>GPA in Major: 3.4/4.0</li>
+					</ul>
+				</div>
+			</li>
+		</ol>
+	</section>
+
+</article>

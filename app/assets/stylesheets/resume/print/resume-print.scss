@@ -1,0 +1,40 @@
+.hidden { display:none; }
+
+/* General */
+.hresume 
+{
+	/* Reset the color scheme to black text on a white background */
+	color: Black;
+	background-color: White;
+	
+	/* Size the resume according to standard US 8.5" x 11" paper; 7.5" of 
+	 * usable space with .5" margins */
+	width:7.5in; 
+	margin: 0; /* Margins will be automatically added when printing */
+
+	/* Because hyperlink text don't make sense in a print context, any a element marked 
+ 	 * as printable will haved its text replaced with the value of its URL */
+	.url.printable
+	{
+
+		span
+		{
+			/* hide the inner contents of all URLs to be modified for print */
+			display: none;
+		}
+
+		&:after
+		{
+			/* display the actual href attribute of the a element */
+			content: attr(href); 
+		}
+	}
+
+	/* Any link we don't want printed can be hidden by marking it as unprintable */
+	.url.unprintable
+	{
+		/* hide any URLs which we don't want to display on print */
+		display:none;
+	}
+
+}

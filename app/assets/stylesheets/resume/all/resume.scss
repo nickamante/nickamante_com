@@ -1,0 +1,179 @@
+.hidden { display:none; }
+
+/* General */
+.hresume 
+{
+	font-family: Verdana,Geneva,Kalimati,sans-serif;
+	font-size: 12pt;
+	
+	/* Size the resume according to standard US 8.5" x 11" paper; 7.5" of usable space with .5" margins */
+	width:7.5in; 
+	margin: 0.5in;
+	text-align: justify;
+}
+
+.hresume abbr 
+{
+	text-decoration: none;
+}
+
+.hresume h1, h2, h3, h4, h5, h6 
+{
+	font-weight:bold;
+}
+
+.hresume h1,
+.hresume h2,
+.hresume h3 
+{
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.hresume a:link, 
+.hresume a:visited 
+{
+	color: black; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.hresume a:hover
+{
+	text-decoration: none; 
+	border-bottom:1px dotted;
+}
+
+.hresume ol, ul  
+{
+    margin-left: 40px;
+}
+
+.hresume ul li
+{
+	list-style-type: disc;
+}
+
+/* Header */
+.hresume header.vcard 
+{
+	text-align:center;
+}
+
+.hresume header.vcard h1  
+{
+	font-size: 16pt;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.hresume header.vcard .email + .tel:before
+{
+	content:"\2022\0000a0"; /* ascii equivelent of &bull;&nbsp; */
+}
+
+.hresume header.vcard .url
+{
+	/*display:block;*/
+}
+
+/* Skills */
+.hresume section.skills h2 
+{
+	width: 25%;
+	float: left;
+	margin-top: 10px;
+	font-size: 12pt;
+	text-align:left;
+}
+
+.hresume section.skills h2:after
+{
+	content:":";
+}
+
+.hresume section.skills h2 + ul
+{
+	clear:right;
+	display:block;
+	margin-top:20px;
+}
+
+/*.hresume section.skills h2 
+{
+	width: 25%;
+	float: left;
+	text-align:left;
+}
+
+.hresume section.skills h2 + ul
+{
+	clear:right;
+	display:table;
+	margin-top: 40px;
+}*/
+
+
+.hresume section.skills ul li {
+	display:inline;
+	white-space:pre; /* prevents justification from messing with the spacing of individual list items */
+}
+
+.hresume section.skills ul li:after{
+	content:",";
+}
+
+.hresume section.skills ul li:last-child:after{
+	content:"";
+}
+
+
+/* Experience / Education */
+.hresume section.experience li.experience,
+.hresume section.education li.education 
+{
+	/* give the experience items a bit of padding at the top for readability*/
+	margin-top: 20px;
+}
+
+/*.hresume section.experience h3,
+.hresume section.experience h4,
+.hresume section.experience h5,
+.hresume section.education h3,
+.hresume section.education h4,
+.hresume section.education h5*/
+.hresume h3,
+.hresume h4,
+.hresume h5
+{ 
+	/* these headers are mainly for outlining purposes; for display we want them inline*/
+	display:inline;
+}
+
+.hresume section.experience .title:after,
+.hresume section.experience .sub-title:after,
+.hresume section.experience .org:after,
+.hresume section.education .title:after,
+.hresume section.education .sub-title:after,
+.hresume section.education .org:after
+{
+	content:",";
+}
+
+.hresume section.experience .org,
+.hresume section.education .org
+{
+	font-weight: normal;
+	font-style: italic;
+}
+
+.hresume section.experience ul li,
+.hresume section.education ul li  
+{
+	/* by setting the padding-left and the text-indent in opposition, 
+	 * we get the appearance of intending all but the first line of text */
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+
